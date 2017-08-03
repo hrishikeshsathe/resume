@@ -1,0 +1,152 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Hrishikesh Sathe}} & Email : \href{mailto:hrishikesh.sathe90@gmail.com}{hrishikesh.sathe90@gmail.com}\\
+   & Mobile : +1-716-816-8435 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University at Buffalo, SUNY}{Buffalo, NY}
+      {Master of Science in Computer Science;  GPA: 3.51}{Aug. 2014 -- Dec. 2015}
+    \resumeSubheading
+      {University of Pune}{Pune, India}
+      {Bachelor of Engineering in Information Technology;  First Class with Distinction}{Aug. 2008 -- July. 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {IBM Watson }{San Jose, CA}
+      {Staff Software Engineer}{March 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Watson for Drug Discovery (WDD)}
+          {Watson for Drug Discovery helps researchers identify novel drug targets and new indications for existing drugs. The platform can help researchers uncover new connections rapidly, which may lead to new insights and scientific breakthroughs. \\ - Created a new set of APIs to get drug, gene and disease information. Also added a type-ahead service to improve user experience. Improved performance of an ontology service by 40\% by rewriting the underlying SQL.\\ - Implemented a new algorithm for finding candidate set of entities for a given training set. \\ - Improved the data parsing and extraction process by rewriting intermediate steps.\\ - Created a tool to extract data from DrugBank. The data helped improve the overall data quality of WDD.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Okta}{San Francisco, CA}
+      {Software Engineer Intern}{May 2015 - Aug 2015}
+      \resumeItemListStart
+        \resumeItem{LDAP service}
+          {Developed a service (using UnboundID and Java) which acts as a layer between Okta and LDAP Clients. This service allows customers to use LDAP Clients (like Apache Directory Studio and Jenkins) to talk LDAP while replacing their source of truth from LDAP Servers to Okta. Performed unit testing using EasyMock and TestNG. Also added newer functionality to the Okta API to support this.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tata Consultancy Services}{Pune, India}
+      {Assistant Systems Engineer}{Dec 2012 - June 2014}
+      \resumeItemListStart
+        \resumeItem{POC} {Led a group of 5 to create a website for Multibanking using Java, MySQL. The website had modules for funds transfer, fixed and recurring deposits, and account management.}
+        \resumeItem{Banking client} {Reduced the data inconsistencies by 14\% by implementing validation checks and reCAPTCHA using JavaScript and PHP for a website’s “create a new account” form. Added security measures to the website’s login page using nonces (Java) for generating verification codes/One Time Passwords.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+    \resumeSubItem{Database Systems, Simple SPJUA query evaluator (Java), Feb 2015 - May 2015}
+      {\\Implement a simple SQL query evaluator with support for Select, Project, Join, Union, and Aggregate operations. Optimized the query evaluation technique to reduce processing time for queries on Big Data.}
+    \resumeSubItem{Distributed File Systems, SmartFS (Android), Feb 2015 - May 2015}
+      {\\Implemented a serverless distributed file system for file access and sharing across multiple Android smartphones. Each smartphone could export file metadata and other smartphones could search and download these files.}
+    \resumeSubItem{Search Engine and Contextual Ad Serving (Java, Solr, MySQL), Sep 2014 - Dec 2014}
+      {Developed 4 modules - Parser, Tokenizer, Indexer and Searcher. Indexer creates multiple indexes on news articles viz. term, place, date and category. Searcher ingests free text user query and returns a result set. Developed a news search system which serves contextual advertisements along with the search results. Advertisers can also bid for top spots in displayed ads.}
+    \resumeSubItem{IMDb to JSON parser (Python), June 2013}
+      {\\Developed a parser that takes input from the console as the name of a TV series or movie, searches and scraps webpages from IMDb, parses all the information on the TV series/movie page and converts it into a JSON file.}
+      \resumeSubItem{Friend/Family Locator and Automatic Profile setter (Android), Aug 2011 - May 2012}
+      {\\Developed an android application that allows users to view location using GPS, add/delete friends, set privacy control for location sharing, get directions to friends. Also developed an app which detects the location of the mobile and automatically changes the profile (loud, vibrate, silent) based on the saved preferences.
+}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{
+     Java, Python, Javascript, DB2, MySQL, Websphere Liberty, Tomcat, Solr, EasyMock, Junit, Maven, Git
+    }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
